@@ -86,3 +86,4 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
     - IZoo
     - ISpecies
     - IHabitats
+- Creado clase Species que estaba pendiente
