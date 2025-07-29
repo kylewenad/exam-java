@@ -99,3 +99,7 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
 - Agregar métodos a la clase Species del interfaz ISpecies 
 
 - Eliminado clase Species
+
+- Agregado métodos a la clase Mammals
+
+- Creado enum Species
