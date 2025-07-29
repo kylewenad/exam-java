@@ -103,3 +103,7 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
 - Agregado métodos a la clase Mammals
 
 - Creado enum Species
+
+- Creado enum Animals
+
+- Creado enum Habitats
