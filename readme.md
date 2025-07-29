@@ -93,3 +93,5 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
     - Birds
     - Reptiles
     - AquaticAnimals
+
+- Añadir métodos posibles a la interfaz de ISpecies
