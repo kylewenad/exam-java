@@ -47,3 +47,16 @@ Los requisitos que nos llegan del cliente son los siguientes:
 - En el zoológico, tengo disponibles varios tipos de hábitats (habitats), de distintos tamaños (terrestre (terrestrial), acuático (aquatic), terrario (terrarium)).
 
 Se trata de hacer un programa en Java que permita gestionar el zoológico, de acuerdo con las indicaciones dadas por el cliente.
+
+
+
+# Gestión de Zoológico: pasos
+
+- Crear paquetes: 
+    - Paquete zoo:
+        - Paquete especies (species):
+            - Paquete mamíferos(mammals):
+            - Paquete Aves (birds):
+            - Paquete Reptiles (reptiles)
+            - Paquete Animales acuáticos
+        - Paquete tipos de hábitats (habitats)
