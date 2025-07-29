@@ -87,3 +87,9 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
     - ISpecies
     - IHabitats
 - Creado clase Species que estaba pendiente
+
+- Crear clases pendientes:
+    - Mammals
+    - Birds
+    - Reptiles
+    - AquaticAnimals
