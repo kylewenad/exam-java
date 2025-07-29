@@ -1,26 +1,21 @@
 package com.cdsb.zoo.species.mammals;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import com.cdsb.zoo.enums.Animals;
 import com.cdsb.zoo.enums.Habitats;
-import com.cdsb.zoo.enums.Species;
+import com.cdsb.zoo.enums.Specie;
 
 public class Lions extends Mammals{
 
-    protected Set<Species> compatible;
-    protected Set<Species> incompatible;
-
+   
+    protected Set<Animals> compatible;
+    protected Set<Animals> incompatible;
     String veterinaryCare;
     Habitats habitats;
-    Species species;
+    Specie species;
 
-    public Lions(String nameOfAnimal, Species species, Set<Species> compatible, Set<Species> incompatible,
-            String veterinaryCare, Habitats habitats) {
-        super(nameOfAnimal, species, compatible, incompatible);
-        this.veterinaryCare = veterinaryCare;
-        this.habitats = habitats;
-    }
 
     @Override
     public Animals getAnimal() {
@@ -45,6 +40,7 @@ public class Lions extends Mammals{
     }
     @Override
     public Boolean isPredator() {
+        if(Animals.equals())
         return true;
     }
     

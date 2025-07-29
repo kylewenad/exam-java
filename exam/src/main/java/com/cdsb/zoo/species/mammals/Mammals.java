@@ -3,50 +3,49 @@ package com.cdsb.zoo.species.mammals;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.cdsb.zoo.Species;
 import com.cdsb.zoo.enums.Animals;
-import com.cdsb.zoo.enums.Species;
+import com.cdsb.zoo.enums.Specie;
 import com.cdsb.zoo.species.ISpecies;
 
-public abstract class Mammals implements ISpecies{
+public abstract class Mammals extends Species{
 
-    protected Species species;
+    protected Set<Specie> compatible;
+    protected Set<Specie> incompatible;
+
+    protected Specie species;
     protected Animals animals;
-    protected Set<Species> compatible;
-    protected Set<Species> incompatible;
-    
-    private String nameOfAnimal;
-    private int space;
     
     
-    public Mammals(String nameOfAnimal, Species species, Set<Species> compatible, Set<Species> incompatible) {
-        this.nameOfAnimal = nameOfAnimal;
-        species = Species.MAMMALS;
+    public Mammals(String nameOfAnimal, Specie species) {
+        super(nameOfAnimal);
+        species = Specie.MAMMALS;
         compatible = new HashSet<>();
         incompatible = new HashSet<>();
+        incompatible.add(Specie.AQUATIC_ANIMALS);
+        incompatible.add(Specie.REPTILES);
+        incompatible.add(Specie.BIRDS);
     }
     
     @Override
-    public String getNameOfTheAnimal() {
-        return nameOfAnimal;
+    public Specie getSpecies() {
+        return Specie.MAMMALS;
     }
-
-    @Override
-    public Species getSpecies() {
-        return Species.MAMMALS;
-    }
-    public void setSpecies(Species species) {
+    public void setSpecies(Specie species) {
         this.species = species;
     }
 
     @Override
-    public Boolean isCompatible() {
+    public Boolean isCompatible(ISpecies Species) {
         boolean compatible = true;
-        if(!Species.equals(Mammals.compatible())){
-            
+        if(!species.equals(species.getSpecies())){
+            if(!compatible.contains(mammals.getSpecies())){
+                compatible &= !animals.equals(Species);
+                compatible &= !species.contains
+            }
         }
 
-        }
-        return false;
+        return compatible;
     }
 
 

@@ -1,5 +1,5 @@
 package com.cdsb.zoo.enums;
 
-public enum Species {
+public enum Specie {
     MAMMALS, BIRDS, AQUATIC_ANIMALS, REPTILES 
 }
