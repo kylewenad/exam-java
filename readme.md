@@ -60,3 +60,24 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
             - Paquete Reptiles (reptiles)
             - Paquete Animales acuáticos
         - Paquete tipos de hábitats (habitats)
+
+- Crear clases:
+    - Zoo
+        - Species
+            - Mammals
+                - Lions
+                - Elephants
+                - Zebras
+            - Birds
+                - Parrots
+                - Toucans
+            - Reptiles
+                - Snakes
+                - Iguanas
+            - AquaticAnimals
+                - Dolphins
+                - Seals
+        - Habitats
+            - Terrestrial
+            - Aquatic
+            - Terrarium
