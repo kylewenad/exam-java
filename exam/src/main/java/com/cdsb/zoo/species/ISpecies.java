@@ -9,7 +9,7 @@ public interface ISpecies {
 
     String getNameOfTheAnimal();
 
-    Specie getSpecies();
+    Specie getSpecie();
     Animals getAnimal();
 
     Habitats getSHabitatAnimal();

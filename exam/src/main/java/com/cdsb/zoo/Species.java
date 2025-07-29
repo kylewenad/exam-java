@@ -4,15 +4,14 @@ import java.util.Set;
 
 import com.cdsb.zoo.enums.Animals;
 import com.cdsb.zoo.enums.Habitats;
-import com.cdsb.zoo.enums.Specie;
 import com.cdsb.zoo.species.ISpecies;
 
 public abstract class Species implements ISpecies{
 
-    protected Set<Specie> compatible;
-    protected Set<Specie> incompatible;
+    protected Set<Species> compatible;
+    protected Set<Species> incompatible;
 
-    protected Specie species;
+    protected Species species;
     protected Animals animals;
     protected Habitats habitats;
     private String nameOfTheAnimal;
@@ -30,8 +29,5 @@ public abstract class Species implements ISpecies{
     public void setNameOfTheAnimal(String nameOfTheAnimal){
         this.nameOfTheAnimal = nameOfTheAnimal;
     }
-
-    
-
 
 }

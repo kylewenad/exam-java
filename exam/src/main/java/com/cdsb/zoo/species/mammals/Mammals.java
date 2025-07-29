@@ -9,46 +9,41 @@ import com.cdsb.zoo.enums.Specie;
 import com.cdsb.zoo.species.ISpecies;
 
 public abstract class Mammals extends Species{
-
+    
     protected Set<Specie> compatible;
     protected Set<Specie> incompatible;
-
+    
     protected Specie species;
     protected Animals animals;
     
     
-    public Mammals(String nameOfAnimal, Specie species) {
-        super(nameOfAnimal);
+    public Mammals(String nameOfTheAnimal, Specie species) {
+        super(nameOfTheAnimal);
         species = Specie.MAMMALS;
         compatible = new HashSet<>();
         incompatible = new HashSet<>();
         incompatible.add(Specie.AQUATIC_ANIMALS);
         incompatible.add(Specie.REPTILES);
-        incompatible.add(Specie.BIRDS);
+        incompatible.add(Specie.BIRDS); 
+    }
+    
+    public void setSpecie(Specie species) {
+        this.species = species;
     }
     
     @Override
-    public Specie getSpecies() {
+    public Specie getSpecie() {
         return Specie.MAMMALS;
-    }
-    public void setSpecies(Specie species) {
-        this.species = species;
     }
 
     @Override
-    public Boolean isCompatible(ISpecies Species) {
+    public Boolean isCompatible(ISpecies species) {
         boolean compatible = true;
-        if(!species.equals(species.getSpecies())){
-            if(!compatible.contains(mammals.getSpecies())){
-                compatible &= !animals.equals(Species);
-                compatible &= !species.contains
-            }
+        if(!Specie.equals(getSpecie())) {
+            if(!
         }
 
         return compatible;
     }
-
-
-    
     
 }
