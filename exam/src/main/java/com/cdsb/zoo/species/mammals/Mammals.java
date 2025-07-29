@@ -1,48 +1,55 @@
 package com.cdsb.zoo.species.mammals;
 
+import java.util.HashSet;
+import java.util.Set;
+
+import com.cdsb.zoo.enums.Animals;
+import com.cdsb.zoo.enums.Species;
 import com.cdsb.zoo.species.ISpecies;
 
 public abstract class Mammals implements ISpecies{
 
-    @Override
-    public String getAnimal() {
-        // TODO Auto-generated method stub
-        return null;
+    protected Species species;
+    protected Animals animals;
+    protected Set<Species> compatible;
+    protected Set<Species> incompatible;
+    
+    private String nameOfAnimal;
+    private int space;
+    
+    
+    public Mammals(String nameOfAnimal, Species species, Set<Species> compatible, Set<Species> incompatible) {
+        this.nameOfAnimal = nameOfAnimal;
+        species = Species.MAMMALS;
+        compatible = new HashSet<>();
+        incompatible = new HashSet<>();
     }
-
+    
     @Override
     public String getNameOfTheAnimal() {
-        // TODO Auto-generated method stub
-        return null;
+        return nameOfAnimal;
     }
 
     @Override
-    public int getSpaceAnimal() {
-        // TODO Auto-generated method stub
-        return 0;
+    public Species getSpecies() {
+        return Species.MAMMALS;
     }
-
-    @Override
-    public String getSpecies() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public String getVeterinaryCare() {
-        // TODO Auto-generated method stub
-        return null;
+    public void setSpecies(Species species) {
+        this.species = species;
     }
 
     @Override
     public Boolean isCompatible() {
-        // TODO Auto-generated method stub
-        return null;
+        boolean compatible = true;
+        if(!Species.equals(Mammals.compatible())){
+            
+        }
+
+        }
+        return false;
     }
 
-    @Override
-    public Boolean isPredator() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+
+    
+    
 }
