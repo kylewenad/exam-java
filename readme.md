@@ -81,3 +81,8 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
             - Terrestrial
             - Aquatic
             - Terrarium
+
+- Crear interfaces:
+    - IZoo
+    - ISpecies
+    - IHabitats
