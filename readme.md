@@ -145,3 +145,5 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
 - Añadir métodos y pruebas en App
 
 - Añadir métodos en Reptiles, Snakes e Iguanas. Pruebas en App.
+
+- Añadir métodos en Birds, Toucans y Parrots. Pruebas en App.

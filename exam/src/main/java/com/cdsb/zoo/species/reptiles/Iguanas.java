@@ -41,5 +41,11 @@ public class Iguanas extends Reptiles{
     }
 
 
+    @Override
+    public String toString() {
+        return "Iguanas [vetCares=" + vetCares + ", feedAnimal=" + feedAnimal + ", spaceNeeded=" + spaceNeeded + "]";
+    }
+
+
 
 }

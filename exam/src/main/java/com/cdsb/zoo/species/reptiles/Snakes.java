@@ -38,6 +38,11 @@ public class Snakes extends Reptiles{
         return vetCares;
     }
 
+    @Override
+    public String toString() {
+        return "Snakes [vetCares=" + vetCares + ", feedAnimal=" + feedAnimal + ", spaceNeeded=" + spaceNeeded + "]";
+    }
+
 
 
 }

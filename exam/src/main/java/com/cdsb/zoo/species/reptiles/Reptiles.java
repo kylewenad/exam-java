@@ -16,7 +16,7 @@ public abstract class Reptiles extends Species{
         return animalSpecies;
     }
 
-    public void setAnimals(AnimalSpecies animalSpecies) {
+    public void setSpecies(AnimalSpecies animalSpecies) {
         this.animalSpecies = animalSpecies;
     }
 
