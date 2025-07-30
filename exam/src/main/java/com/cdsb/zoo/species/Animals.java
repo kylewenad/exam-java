@@ -3,21 +3,23 @@ package com.cdsb.zoo.species;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.cdsb.zoo.enums.AnimalSpecies;
 import com.cdsb.zoo.enums.AnimalType;
 
 public abstract class Animals implements IAnimals{
 
     protected AnimalType animalType;
-    protected Set<AnimalType> compatible;
-    protected Set<AnimalType> incompatible;
+    protected AnimalSpecies animalSpecies;
+    protected Set<AnimalType> compatibles;
+    protected Set<AnimalType> incompatibles;
 
     private String nameOfTheAnimal;
     
     
     public Animals(String nameOfTheAnimal) {
         this.nameOfTheAnimal = nameOfTheAnimal;
-        compatible = new HashSet<>();
-        incompatible = new HashSet<>();
+        compatibles = new HashSet<>();
+        incompatibles = new HashSet<>();
     }
 
     @Override
@@ -27,6 +29,24 @@ public abstract class Animals implements IAnimals{
 
     public void setNameOfTheAnimal(String nameOfTheAnimal){
         this.nameOfTheAnimal = nameOfTheAnimal;
+    }
+
+    @Override
+    public Boolean canLiveTogether(IAnimals animals) {
+        boolean compatible = true;
+        if (!animalType.equals(animals.getAnimalType())){
+            if(!compatibles.contains(animals.getAnimalType()));{
+                compatible &= !incompatibles.contains(animals.getAnimalType());
+                return false;
+            }
+        }
+
+        return compatible;
+    }
+
+    @Override
+    public Boolean isCompatibleWithAnimal() {
+        return null;
     }
 
 }

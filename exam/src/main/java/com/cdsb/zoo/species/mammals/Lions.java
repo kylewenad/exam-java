@@ -1,47 +1,43 @@
 package com.cdsb.zoo.species.mammals;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import com.cdsb.zoo.enums.AnimalType;
-import com.cdsb.zoo.enums.HabitatsType;
-import com.cdsb.zoo.enums.AnimalSpecies;
 
 public class Lions extends Mammals{
-
-   
-    protected Set<AnimalType> compatible;
-    protected Set<AnimalType> incompatible;
-    String veterinaryCare;
-    HabitatsType habitats;
-    AnimalSpecies species;
-
-
-    @Override
-    public AnimalType getAnimal() {
-        return AnimalType.LION;
-    }
-
-    public void setAnimals(AnimalType animals) {
-        this.animals = animals;
-    }
     
-    @Override
-    public HabitatsType getSHabitatAnimal() {
-        return HabitatsType.TERRESTRIAL;
+    
+    private String vetCares = "Periodic physical exams to assess the lions' overall health, including their weight, body condition, and vital signs.";
+    private String feedAnimal = "Once every three days";
+    private int spaceNeeded = 30;
+
+    public Lions(String nameOfTheAnimal) {
+        super(nameOfTheAnimal);
+        animalType = AnimalType.LION;
+        incompatible.add(AnimalType.ELEPHANT);
+        incompatible.add(AnimalType.ZEBRA);
     }
 
-    public void setHabitat(HabitatsType habitats) {
-        this.habitats = habitats;
-    }
     @Override
-    public String getVeterinaryCare() {
-        return veterinaryCare;
+    public AnimalType getAnimalType() {
+        return animalType;
     }
+
+    public void setAnimals(AnimalType animalType) {
+        this.animalType = animalType;
+    }
+
     @Override
-    public Boolean isPredator() {
-        if(AnimalType.equals())
-        return true;
+    public String vetCares() {
+        return vetCares;
+    }
+
+    @Override
+    public String feedAnimal() {
+        return feedAnimal;
+    }
+
+    @Override
+    public int spaceNeeded() {
+        return spaceNeeded;
     }
     
     

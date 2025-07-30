@@ -10,7 +10,7 @@ public interface IAnimals {
     AnimalSpecies getAnimalSpecies();
     AnimalType getAnimalType();
 
-    Boolean canLiveTogether();
+    Boolean canLiveTogether(IAnimals animals);
     Boolean isCompatibleWithAnimal();
    
 }

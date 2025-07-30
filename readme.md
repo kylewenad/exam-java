@@ -141,3 +141,5 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
     - AnimalSpecies
     - AnimalType
     - HabitatType
+
+- Añadir métodos y pruebas en App

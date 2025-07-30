@@ -4,6 +4,7 @@ import com.cdsb.zoo.enums.AnimalSpecies;
 
 public abstract class Species extends Animals{  
 
+    protected AnimalSpecies animalSpecies;
     private int spaceNeeded;
     private String feeding;
     private String vetCares;

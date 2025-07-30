@@ -14,7 +14,7 @@ public abstract class Mammals extends Species{
     protected Set<AnimalType> incompatible;
     protected AnimalSpecies animalSpecies;
     
-    public Mammals(String nameOfTheAnimal, AnimalSpecies animalSpecies) {
+    public Mammals(String nameOfTheAnimal) {
         super(nameOfTheAnimal);
         animalSpecies = AnimalSpecies.MAMMALS;
         compatible = new HashSet<>();
