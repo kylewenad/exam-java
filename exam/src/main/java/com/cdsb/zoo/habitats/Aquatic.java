@@ -1,7 +1,10 @@
 package com.cdsb.zoo.habitats;
 
+import java.util.Set;
+
 import com.cdsb.zoo.enums.AnimalSpecies;
 import com.cdsb.zoo.enums.HabitatType;
+import com.cdsb.zoo.species.IAnimals;
 
 public class Aquatic extends Habitats{
 
@@ -21,6 +24,17 @@ public class Aquatic extends Habitats{
 
     public void setHabitatType(HabitatType habitatType) {
         this.habitatType = habitatType;
+    }
+
+    @Override
+    public String toString() {
+        return "Aquatic []";
+    }
+
+    @Override
+    public Set<IAnimals> getAnimals() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAnimals'");
     }
 
 }

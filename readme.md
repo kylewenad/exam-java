@@ -151,3 +151,5 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
 - Añadir métodos en AquaticAnimals, Dolphins y Seals. Pruebas App.
 
 - Añadir métodos a interfaz IHabitats y clases.
+
+- Añadir métodos a interfaz IZoo y clases.
