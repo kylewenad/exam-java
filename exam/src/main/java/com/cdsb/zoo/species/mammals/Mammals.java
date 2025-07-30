@@ -3,47 +3,30 @@ package com.cdsb.zoo.species.mammals;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.cdsb.zoo.Species;
-import com.cdsb.zoo.enums.Animals;
-import com.cdsb.zoo.enums.Specie;
-import com.cdsb.zoo.species.ISpecies;
+import com.cdsb.zoo.enums.AnimalSpecies;
+import com.cdsb.zoo.enums.AnimalType;
+import com.cdsb.zoo.species.Species;
+
 
 public abstract class Mammals extends Species{
     
-    protected Set<Specie> compatible;
-    protected Set<Specie> incompatible;
+    protected Set<AnimalType> compatible;
+    protected Set<AnimalType> incompatible;
+    protected AnimalSpecies animalSpecies;
     
-    protected Specie species;
-    protected Animals animals;
-    
-    
-    public Mammals(String nameOfTheAnimal, Specie species) {
+    public Mammals(String nameOfTheAnimal, AnimalSpecies animalSpecies) {
         super(nameOfTheAnimal);
-        species = Specie.MAMMALS;
+        animalSpecies = AnimalSpecies.MAMMALS;
         compatible = new HashSet<>();
-        incompatible = new HashSet<>();
-        incompatible.add(Specie.AQUATIC_ANIMALS);
-        incompatible.add(Specie.REPTILES);
-        incompatible.add(Specie.BIRDS); 
+        incompatible = new HashSet<>();        
     }
     
-    public void setSpecie(Specie species) {
-        this.species = species;
+    public void setSpecies(AnimalSpecies animalSpecies) {
+        this.animalSpecies = animalSpecies;
     }
     
     @Override
-    public Specie getSpecie() {
-        return Specie.MAMMALS;
+    public AnimalSpecies getAnimalSpecies() {
+        return animalSpecies;
     }
-
-    @Override
-    public Boolean isCompatible(ISpecies species) {
-        boolean compatible = true;
-        if(!Specie.equals(getSpecie())) {
-            if(!
-        }
-
-        return compatible;
-    }
-    
 }

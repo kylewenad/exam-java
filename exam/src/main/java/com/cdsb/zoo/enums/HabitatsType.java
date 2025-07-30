@@ -1,6 +1,6 @@
 package com.cdsb.zoo.enums;
 
-public enum Habitats {
+public enum HabitatsType {
     TERRESTRIAL, AQUATIC, TERRARIUM
 
 }

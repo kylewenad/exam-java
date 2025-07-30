@@ -1,5 +1,5 @@
 package com.cdsb.zoo.enums;
 
-public enum Animals {
+public enum AnimalType {
     LION, ELEPHANT, ZEBRA, PARROT, TOUCAN, SNAKE, IGUANA, DOLPHIN, SEAL
 }

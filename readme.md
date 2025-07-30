@@ -107,3 +107,37 @@ Se trata de hacer un programa en Java que permita gestionar el zoológico, de ac
 - Creado enum Animals
 
 - Creado enum Habitats
+
+- Empezar de nuevo el proyecto
+
+- Crear clases:
+    - Zoo
+        - Animals
+            - AnimalSpecies
+                - Mammals
+                    - Lions
+                    - Elephants
+                    - Zebras
+                - Birds
+                    - Parrots
+                    - Toucans
+                - Reptiles
+                    - Snakes
+                    - Iguanas
+                - AquaticAnimals
+                    - Dolphins
+                    - Seals
+        - Habitats
+            - Terrestrial
+            - Aquatic
+            - Terrarium
+
+- Crear interfaces:
+    - IZoo
+    - IAnimals
+    - IHabitats
+
+- Crear enums:
+    - AnimalSpecies
+    - AnimalType
+    - HabitatType
