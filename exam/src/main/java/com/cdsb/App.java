@@ -2,6 +2,7 @@ package com.cdsb;
 
 
 import com.cdsb.zoo.species.IAnimals;
+import com.cdsb.zoo.species.aquaticAnimals.Dolphins;
 import com.cdsb.zoo.species.birds.Toucans;
 import com.cdsb.zoo.species.mammals.Elephants;
 import com.cdsb.zoo.species.mammals.Lions;
@@ -43,5 +44,10 @@ public final class App {
         IAnimals toucan1 = new Toucans("Pepe");
         System.out.println(toucan1.getNameOfTheAnimal());
         System.out.println(toucan1.canLiveTogether(toucan1));
+
+        IAnimals dolphin1 = new Dolphins("Willy");
+        System.out.println(dolphin1.getNameOfTheAnimal());
+        System.out.println(dolphin1.getAnimalType());
+        System.out.println(dolphin1.canLiveTogether(toucan1));
     }
 }

@@ -1,5 +1,41 @@
 package com.cdsb.zoo.species.aquaticAnimals;
 
-public class Seals {
+import com.cdsb.zoo.enums.AnimalType;
+
+public class Seals extends AquaticAnimals{
+
+    private String vetCares;
+    private String feedAnimal;
+    private int spaceNeeded;
+
+    public Seals(String nameOfTheAnimal) {
+        super(nameOfTheAnimal);
+        animalType = AnimalType.SEAL;
+        compatibles.add(AnimalType.DOLPHIN);
+    }
+
+   @Override
+    public AnimalType getAnimalType() {
+        return animalType;
+    }
+
+    public void setAnimals(AnimalType animalType) {
+        this.animalType = animalType;
+    }
+
+     @Override
+    public String feedAnimal() {
+        return feedAnimal;
+    }
+
+    @Override
+    public int spaceNeeded() {
+        return spaceNeeded;
+    }
+
+    @Override
+    public String vetCares() {
+        return vetCares;
+    }
 
 }
