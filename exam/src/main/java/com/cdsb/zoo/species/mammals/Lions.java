@@ -39,6 +39,11 @@ public class Lions extends Mammals{
     public int spaceNeeded() {
         return spaceNeeded;
     }
+
+    @Override
+    public String toString() {
+        return "Lions [vetCares=" + vetCares + ", feedAnimal=" + feedAnimal + ", spaceNeeded=" + spaceNeeded + "]";
+    }
     
     
 }

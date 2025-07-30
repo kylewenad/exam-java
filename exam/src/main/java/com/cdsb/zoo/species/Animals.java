@@ -33,15 +33,12 @@ public abstract class Animals implements IAnimals{
 
     @Override
     public Boolean canLiveTogether(IAnimals animals) {
-        boolean compatible = true;
-        if (!animalType.equals(animals.getAnimalType())){
-            if(!compatibles.contains(animals.getAnimalType()));{
-                compatible &= !incompatibles.contains(animals.getAnimalType());
+        boolean canLiveTogether = true;
+        if (animalType.equals(animals.getAnimalType()) && !compatibles.contains(animals.getAnimalType())){
                 return false;
-            }
         }
-
-        return compatible;
+//TODO no funciona
+        return canLiveTogether;
     }
 
     @Override

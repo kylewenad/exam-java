@@ -4,6 +4,9 @@ package com.cdsb;
 import com.cdsb.zoo.species.IAnimals;
 import com.cdsb.zoo.species.mammals.Elephants;
 import com.cdsb.zoo.species.mammals.Lions;
+import com.cdsb.zoo.species.mammals.Zebras;
+import com.cdsb.zoo.species.reptiles.Iguanas;
+import com.cdsb.zoo.species.reptiles.Snakes;
 
 public final class App {
    
@@ -21,5 +24,19 @@ public final class App {
         System.out.println(elephant1.getNameOfTheAnimal());
         System.out.println(elephant1.canLiveTogether(lion1));
         System.out.println(elephant1.toString());
+
+        IAnimals zebra1 = new Zebras("Marshal");
+        System.out.println(zebra1.getNameOfTheAnimal());
+        System.out.println(zebra1.canLiveTogether(elephant1));
+        System.out.println(zebra1.toString());
+
+        IAnimals snake1 = new Snakes("Nagini");
+        System.out.println(snake1.getNameOfTheAnimal());
+        System.out.println(snake1.getAnimalSpecies());
+        System.out.println(snake1.canLiveTogether(lion1));
+
+        IAnimals iguana1 = new Iguanas("Ana");
+        System.out.println(iguana1.getNameOfTheAnimal());
+        System.out.println(iguana1.canLiveTogether(iguana1));
     }
 }
