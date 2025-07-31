@@ -3,15 +3,14 @@ package com.cdsb.zoo;
 import java.util.HashSet;
 import java.util.Set;
 
-import com.cdsb.zoo.habitats.Habitats;
+
 import com.cdsb.zoo.habitats.IHabitats;
-import com.cdsb.zoo.species.Animals;
 import com.cdsb.zoo.species.IAnimals;
 
 public class Zoo implements IZoo{
 
     private String name;
-    private Set<Habitats> habitatList;
+    private Set<IHabitats> habitatList;
     protected Set<IAnimals> animalList;
 
     public Zoo(String name) {
@@ -21,8 +20,12 @@ public class Zoo implements IZoo{
     }
     
     @Override
-    public String zooName() {
+    public String getZooName() {
         return name;
+    }
+
+    public void setZooName(String name){
+        this.name = name;
     }
     
     @Override

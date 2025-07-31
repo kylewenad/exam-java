@@ -1,6 +1,10 @@
 package com.cdsb;
 
 
+import com.cdsb.zoo.IZoo;
+import com.cdsb.zoo.Zoo;
+import com.cdsb.zoo.habitats.IHabitats;
+import com.cdsb.zoo.habitats.Terrarium;
 import com.cdsb.zoo.species.IAnimals;
 import com.cdsb.zoo.species.aquaticAnimals.Dolphins;
 import com.cdsb.zoo.species.birds.Toucans;
@@ -13,10 +17,18 @@ import com.cdsb.zoo.species.reptiles.Snakes;
 public final class App {
    
     public static void main(String[] args) {
+
+        IZoo zoo1 = new Zoo("Faunia");
+        System.out.println(zoo1.getZooName());
+
+
         IAnimals lion1 = new Lions("Simba");
         System.out.println(lion1.getNameOfTheAnimal());
         System.out.println(lion1.getAnimalSpecies());
         System.out.println(lion1.getAnimalType());
+
+        IHabitats terrarium1 = new Terrarium("Serpiente");
+        System.out.println(terrarium1.getHabitatType());
     
 
         IAnimals lion2 = new Lions("Nala");

@@ -11,6 +11,5 @@ public interface IAnimals {
     AnimalType getAnimalType();
 
     Boolean canLiveTogether(IAnimals animals);
-    Boolean isCompatibleWithAnimal();
    
 }

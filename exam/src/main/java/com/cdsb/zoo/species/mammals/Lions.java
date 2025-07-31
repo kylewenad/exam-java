@@ -12,8 +12,9 @@ public class Lions extends Mammals{
     public Lions(String nameOfTheAnimal) {
         super(nameOfTheAnimal);
         animalType = AnimalType.LION;
-        incompatible.add(AnimalType.ELEPHANT);
-        incompatible.add(AnimalType.ZEBRA);
+        compatibles.add(AnimalType.LION);
+        incompatibles.add(AnimalType.ELEPHANT);
+        incompatibles.add(AnimalType.ZEBRA);
     }
 
     @Override

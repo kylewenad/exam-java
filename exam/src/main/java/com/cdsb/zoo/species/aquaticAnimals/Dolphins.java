@@ -11,6 +11,7 @@ public class Dolphins extends AquaticAnimals{
     public Dolphins(String nameOfTheAnimal) {
         super(nameOfTheAnimal);
         animalType = AnimalType.DOLPHIN;
+        compatibles.add(AnimalType.DOLPHIN);
         compatibles.add(AnimalType.SEAL);
     }
 

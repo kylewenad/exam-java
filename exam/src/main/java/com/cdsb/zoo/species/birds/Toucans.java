@@ -11,6 +11,7 @@ public class Toucans extends Birds{
     public Toucans(String nameOfTheAnimal) {
         super(nameOfTheAnimal);
         animalType = AnimalType.TOUCAN;
+        compatibles.add(AnimalType.TOUCAN);
         compatibles.add(AnimalType.PARROT);
     }
 

@@ -5,7 +5,7 @@ import com.cdsb.zoo.species.IAnimals;
 
 public interface IZoo {
 
-    String zooName();
+    String getZooName();
 
     void addAnimal(IAnimals animals);
     void removeAnimal(IAnimals animals);

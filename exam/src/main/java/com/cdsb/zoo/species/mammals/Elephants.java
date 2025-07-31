@@ -11,6 +11,7 @@ public class Elephants extends Mammals{
     public Elephants(String nameOfTheAnimal) {
         super(nameOfTheAnimal);
         animalType = AnimalType.ELEPHANT;
+        compatibles.add(AnimalType.ELEPHANT);
         compatibles.add(AnimalType.ZEBRA);
         incompatibles.add(AnimalType.LION);
     }

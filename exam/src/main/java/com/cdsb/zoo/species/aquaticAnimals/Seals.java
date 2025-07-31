@@ -11,6 +11,7 @@ public class Seals extends AquaticAnimals{
     public Seals(String nameOfTheAnimal) {
         super(nameOfTheAnimal);
         animalType = AnimalType.SEAL;
+        compatibles.add(AnimalType.SEAL);
         compatibles.add(AnimalType.DOLPHIN);
     }
 
@@ -36,6 +37,12 @@ public class Seals extends AquaticAnimals{
     @Override
     public String vetCares() {
         return vetCares;
+    }
+
+    @Override
+    public String toString() {
+        return "Seals [vetCares=" + vetCares + ", animalSpecies=" + animalSpecies + ", feedAnimal=" + feedAnimal
+                + ", spaceNeeded=" + spaceNeeded + ", animalType=" + animalType + "]";
     }
 
 }

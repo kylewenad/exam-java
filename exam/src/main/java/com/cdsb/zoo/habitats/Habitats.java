@@ -5,8 +5,7 @@ import java.util.Set;
 
 import com.cdsb.zoo.enums.AnimalSpecies;
 import com.cdsb.zoo.enums.HabitatType;
-import com.cdsb.zoo.species.Animals;
-import com.cdsb.zoo.species.IAnimals;
+
 
 public abstract class Habitats implements IHabitats{
 
@@ -31,11 +30,13 @@ public abstract class Habitats implements IHabitats{
     }
 
     @Override
-    public boolean isCompatibleHabitatType() {
-
+    public boolean isCompatibleHabitatType(IHabitats habitats) {
+        if(incompatibles.contains(habitats.getHabitatType()))
+            if (compatibles.contains(habitats.getHabitatType())){
+                return true;
+            }
         
         return false;
     }
-
 
 }

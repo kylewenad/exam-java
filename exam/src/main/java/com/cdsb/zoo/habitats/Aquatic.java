@@ -37,4 +37,10 @@ public class Aquatic extends Habitats{
         throw new UnsupportedOperationException("Unimplemented method 'getAnimals'");
     }
 
+    @Override
+    public boolean isCompatibleHabitatType() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isCompatibleHabitatType'");
+    }
+
 }
